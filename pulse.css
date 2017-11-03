@@ -1,0 +1,134 @@
+body {
+  min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+header {
+  padding: 50px 0 50px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 50px 0 50px;
+  }
+}
+
+section {
+  padding: 100px 0;
+}
+.head3 {
+  font-family: Georgia;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 100;
+  color: black;
+}
+.head4 {
+  font-family: Georgia;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 100;
+  color: black;
+}
+.description-text {
+  font-family: Georgia;
+  font-size: 14px;
+  font-style: normal;
+}
+.topsec {
+  padding: 50px 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  font-size: 1.5em;
+}
+
+.thankyou {
+  padding-top: 6rem;
+}
+
+.resized{
+      padding: 0px 15px;
+      height: 70px;
+      width: 70px;
+}
+
+.navbar-title {
+  float: left;
+  min-height: 60px;
+  padding: 0 5px 5px;
+  color: #fff;
+  font-size: 2em;
+}
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  padding-left: 1rem;
+}
+
+.album {
+  min-height: 50rem; /* Can be removed; just added for demo purposes */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.card {
+  float: left;
+  width: 33.2%;
+  padding: .75rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.card > img {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+
+
+.coverphoto{
+	  margin-top: 60px;
+    min-height: 400px;
+    min-width: 1200px;
+}
+
+.itemphoto{
+	height: 200px;
+	width: 300px;
+}
+
+.carousel-caption{
+    font-size: 1.5em;
+    top: 60%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}

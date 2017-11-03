@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Complete Order</title>
+        <link rel="stylesheet" href="purchase_window.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    </head>
+     <body>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4 item-photo">
+                        <img id='main-photo' class="itemphoto">
+                    </div>
+                    <form action="https://formspree.io/pulserasite@gmail.com" method="POST" class="col-xs-7">
+                        <div class="col-xs-7" style="border:0px solid gray;">
+                            <!-- Datos del vendedor y titulo del producto -->
+                            <h3>Pulsera Argentina · <small style="color:#337ab7">(69 units sold)</small> </h3>  
+            
+                            <div class="form-group">
+                                <input id='main-photo' name="_img" style="display:none" />
+                            </div>
+
+                            <h4> Name: </h4>
+                            <p id='main-name'> </p>
+
+                            <h4> Email Address: </h4>
+                            <p id='main-email'> </p>
+                            
+                            <h4> Mailing Address: </h4>
+                            <p id='main-address'></p>
+
+                            <h4> Quantity: </h4>      
+                            <p id='main-quantity'></p>
+  
+
+                            <h4> Payment: </h4>
+                            <p id='main-payment'></p>  
+
+
+                
+                            <!-- Botones de compra -->
+                            
+                            <a href="thankyou.html">
+                                <button class="btn btn-success"><span style="margin-right:20px"></span> Confirm Purchase </button>
+                            </a>
+                            
+                                                               
+                        </div> 
+                    </form>                             
+            
+                    <div class="col-xs-9">
+                        
+                        <div style="width:100%;border-top:1px solid silver">
+                            <p class="description-text">
+                           
+                                Purchase Details: <br>
+                                All payments will be realized through Venmo. In order for your purchase to be considered complete please venmo @zanderchase your order amount.
+                                <br><br>
+                                Mailing Details: <br>
+                                All items purchased will be delivered upon return from Study Abroad (beginning of January). Brown mailbox number is preferred, but if it is more convenient another mailing address may be submitted.
+                            </p>
+                            
+                        </div>
+                    </div>      
+
+                </div>
+            </div> 
+        </section>
+        <footer class="text-muted">
+            <div class="container">
+                <p class="floatr">
+                    <a href="purchase_window.html">Back a page</a>
+                </p>
+            </div>
+        </footer>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <script src="purchase_window.js"></script>   
+
+        <!-- imported js files -->
+        <script src="vendor/jquery.min.js"></script>
+        <script src="vendor/bootstrap.bundle.min.js"></script>
+
+        <script src="vendor/jquery.easing.min.js"></script>
+
+
+        <!-- Custom JavaScript for this theme -->
+        <script src="scrolling-nav.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+        <script>
+            var image = document.getElementById('main-photo');
+            image.src = sessionStorage.image;
+            var yourname = document.getElementById('main-name');
+            yourname.innerHTML = sessionStorage.yourname;
+            var email = document.getElementById('main-email');
+            email.innerHTML = sessionStorage.email;
+            var address = document.getElementById('main-address');
+            address.innerHTML = sessionStorage.address;
+            var quantity = document.getElementById('main-quantity');
+            quantity.innerHTML = sessionStorage.quantity;
+            var payment = document.getElementById('main-payment')
+            payment.innerHTML = "$" + parseFloat(sessionStorage.price) * parseFloat(sessionStorage.quantity) + ".00"
+        </script>   
+    </body>
+</html>
