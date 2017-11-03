@@ -1,6 +1,6 @@
 function submitFunction() {
-    var txt;
-    if (confirm("Press a button!") == true) {
+    
+    if (confirm("Your purchased will not be complete until we recieve your payment.") == true) {
         txt = "You pressed OK!";
     } else {
         txt = "You pressed Cancel!";
