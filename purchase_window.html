@@ -68,7 +68,7 @@
 
                             <!-- Botones de compra -->
                             <div class="section" style="padding-bottom:20px;">
-                                <button class="btn btn-success" onclick="submitFunction()" ><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy </button>
+                                <button class="btn btn-success" ><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy </button>
 
                             </div>                                        
                         </div>       
@@ -126,15 +126,7 @@
                 sessionStorage.address = document.getElementById('main-address').value;
                 sessionStorage.yourname = document.getElementById('main-name').value;
             }
-            function submitFunction() {
-                var txt;
-                if (confirm("Once your Venmo is recieved we will get you your bracelet(s) as soon as possible!") == true) {
-                    txt = "You pressed OK!";
-                }
-                else {
-                    txt = "Cry";
-                }
-            }
+            
 
         </script> 
     </body>
