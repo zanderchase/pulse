@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>Checkout Window</title>
+        <link rel="stylesheet" href="purchase_window.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script>
+            
+        </script>
+    </head>
+    <body>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                   <div class="col-lg-4 item-photo">
+                        <img id="main-photo" class="itemphoto">
+                    </div>
+                    <form action="https://formspree.io/pulserasite@gmail.com" method="POST" class="col-lg-7">
+                        <div class="col-lg-7" style="border:0px solid gray">
+                            <!-- Datos del vendedor y titulo del producto -->
+                            <h3>Pulsera Argentina · <small style="color:#337ab7">(69 units sold)</small> </h3>    
+
+                            <!-- Precios -->
+                            <h6 class="title-price"><small>Price</small></h6>
+
+                            <h3 id="main-price" style="margin-top:0px;"></h3>
+                            
+                            <input id='photo-id' type='hidden' name='Photo:'></input>
+                            <!-- Detalles especificos del producto -->
+                            <div class="section1">                  
+                                <label for="basic-url">Name:</label>
+                                <div class="input-group">
+                                  <span class="input-group-addon2"></span>
+                                  <input name="Name:" type="text" id="main-name" class="form-control" placeholder="Your Name" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                            <div class="section1">                  
+                                <label for="basic-url">Email Address:</label>
+                                <div class="input-group">
+                                  <span class="input-group-addon2"></span>
+                                  <input name="Email:" type="text" id="main-email" class="form-control" placeholder="Your Email" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                            <div class="section1">                  
+                                <label for="basic-url">Mailing Address:</label>
+                                <div class="input-group">
+                                  <span class="input-group-addon2"></span>
+                                  <input name="Address:" type="text" id="main-address" class="form-control" placeholder="Brown Box #  (leave blank if you want it hand delivered)" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                            <div class="section" style="padding-bottom:20px;">
+                                <label for="basic-url">Quantity:</label>                    
+                                <div>
+                                    <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
+                                    <input name="Quantity:" id="main-quantity" class="form-control2" value="1" />
+                                    <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
+                                </div>
+                            </div>                
+
+                            <!-- Botones de compra -->
+                            <div class="section" style="padding-bottom:20px;">
+                                <button class="btn btn-success" onclick="alert('Once we recieve your Venmo we will deliver your bracelet as soon as we can!')"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy </button>
+
+                            </div>                                        
+                        </div>       
+                    </form>
+            
+                    <div class="col-xs-9">
+                        
+                        <div style="width:100%;border-top:1px solid silver">
+                            <p class="description-text">
+                           
+                                Purchase Details: <br>
+                                All payments will be realized through Venmo. In order for your purchase to be considered complete please venmo @zanderchase your order amount.
+                                <br><br>
+                                Mailing Details: <br>
+                                All items purchased will be delivered upon return from Study Abroad (beginning of January). Brown mailbox number is preferred, but if it is more convenient another mailing address may be submitted.
+                            </p>
+                            
+                        </div>
+                    </div>      
+                </div>
+            </div> 
+        </section>
+        <footer class="text-muted">
+            <div class="container">
+                <p class="floatr">
+                    <a href="index.html">Back a page</a>
+                </p>
+            </div>
+        </footer>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <script src="purchase_window.js"></script>   
+
+        <!-- imported js files -->
+        <script src="vendor/jquery.min.js"></script>
+        <script src="vendor/bootstrap.bundle.min.js"></script>
+
+        <script src="vendor/jquery.easing.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+        <script>
+            var image = document.getElementById('main-photo');
+            image.src = sessionStorage.image;
+            var store_img = document.getElementById('photo-id');
+            store_img.value = sessionStorage.image;
+            var price = document.getElementById('main-price');
+            price.innerHTML = "$" + sessionStorage.price;
+            function updateInfo() {
+                sessionStorage.email = document.getElementById('main-email').value;
+                sessionStorage.quantity = document.getElementById('main-quantity').value;
+                sessionStorage.address = document.getElementById('main-address').value;
+                sessionStorage.yourname = document.getElementById('main-name').value;
+            }
+            
+        </script> 
+    </body>
+</html>
