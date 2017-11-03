@@ -34,7 +34,7 @@
                             <input id='photo-id' type='hidden' name='Photo:'></input>
                             <!-- Detalles especificos del producto -->
                             <div class="section1">                  
-                                <label for="basic-url">Names:</label>
+                                <label for="basic-url">Name:</label>
                                 <div class="input-group">
                                   <span class="input-group-addon2"></span>
                                   <input name="Name:" type="text" id="main-name" class="form-control" placeholder="Your Name" aria-describedby="basic-addon2">
@@ -128,10 +128,8 @@
             }
             function submitFunction() {
     
-                if (confirm("Your purchased will not be complete until we recieve your payment.") == true) {
+                if (confirm("Once your Venmo is recieved we will get you your bracelet(s) as soon as possible!") == true) {
                     txt = "You pressed OK!";
-                } else {
-                    window.location = purchase_window.html;
                 }
             }
 
