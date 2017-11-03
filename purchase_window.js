@@ -1,3 +1,14 @@
+function submitFunction() {
+    var txt;
+    if (confirm("Press a button!") == true) {
+        txt = "You pressed OK!";
+    } else {
+        txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+
 $(document).ready(function(){
         //-- Click on detail
         $("ul.menu-items > li").on("click",function(){
