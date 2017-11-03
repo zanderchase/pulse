@@ -21,58 +21,60 @@
                    <div class="col-xs-4 item-photo">
                         <img id="main-photo" class="itemphoto">
                     </div>
+                    <form action="https://formspree.io/pulserasite@gmail.com" method="POST" class="col-xs-7">
+                        <div class="col-xs-5" style="border:0px solid gray">
+                            <!-- Datos del vendedor y titulo del producto -->
+                            <h3>Pulsera Argentina · <small style="color:#337ab7">(69 units sold)</small> </h3>    
 
-                    <div class="col-xs-5" style="border:0px solid gray">
-                        <!-- Datos del vendedor y titulo del producto -->
-                        <h3>Pulsera Argentina · <small style="color:#337ab7">(69 units sold)</small> </h3>    
-            
-                        <!-- Precios -->
-                        <h6 class="title-price"><small>Price</small></h6>
+                            <!-- Precios -->
+                            <h6 class="title-price"><small>Price</small></h6>
 
-                        <h3 id="main-price" style="margin-top:0px;"></h3>
-            
-                        <!-- Detalles especificos del producto -->
-                        <div class="section1">                  
-                            <label for="basic-url">Name:</label>
-                            <div class="input-group">
-                              <span class="input-group-addon2"></span>
-                              <input type="text" id="main-name" class="form-control" placeholder="Your Name" aria-describedby="basic-addon2">
-                            </div>
-                        </div>
-
-                        <div class="section1">                  
-                            <label for="basic-url">Email Address:</label>
-                            <div class="input-group">
-                              <span class="input-group-addon2"></span>
-                              <input type="text" id="main-email" class="form-control" placeholder="Your Email" aria-describedby="basic-addon2">
-                            </div>
-                        </div>
-
-                        <div class="section1">                  
-                            <label for="basic-url">Mailing Address:</label>
-                            <div class="input-group">
-                              <span class="input-group-addon2"></span>
-                              <input type="text" id="main-address" class="form-control" placeholder="Brown Box #  (leave blank if you want it hand delivered)" aria-describedby="basic-addon2">
-                            </div>
-                        </div>
-                          
-                        <div class="section" style="padding-bottom:20px;">
-                            <h6 class="title-attr"><small>CANTIDAD</small></h6>                    
-                            <div>
-                                <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
-                                <input id="main-quantity" class="form-control2" value="1" />
-                                <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
-                            </div>
-                        </div>                
-            
-                        <!-- Botones de compra -->
-                        <div class="section" style="padding-bottom:20px;">
-                            <a href="buy.html" onclick="updateInfo()">
-                                <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy </button>
-                            </a>
+                            <h3 id="main-price" style="margin-top:0px;"></h3>
                             
-                        </div>                                        
-                    </div>                              
+                            <input id='photo-id' type='hidden' name='Photo:'></input>
+                            <!-- Detalles especificos del producto -->
+                            <div class="section1">                  
+                                <label for="basic-url">Name:</label>
+                                <div class="input-group">
+                                  <span class="input-group-addon2"></span>
+                                  <input name="Name:" type="text" id="main-name" class="form-control" placeholder="Your Name" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                            <div class="section1">                  
+                                <label for="basic-url">Email Address:</label>
+                                <div class="input-group">
+                                  <span class="input-group-addon2"></span>
+                                  <input name="Email:" type="text" id="main-email" class="form-control" placeholder="Your Email" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                            <div class="section1">                  
+                                <label for="basic-url">Mailing Address:</label>
+                                <div class="input-group">
+                                  <span class="input-group-addon2"></span>
+                                  <input name="Address:" type="text" id="main-address" class="form-control" placeholder="Brown Box #  (leave blank if you want it hand delivered)" aria-describedby="basic-addon2">
+                                </div>
+                            </div>
+
+                            <div class="section" style="padding-bottom:20px;">
+                                <label for="basic-url">Quantity:</label>                    
+                                <div>
+                                    <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
+                                    <input name="Quantity:" id="main-quantity" class="form-control2" value="1" />
+                                    <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
+                                </div>
+                            </div>                
+
+                            <!-- Botones de compra -->
+                            <div class="section" style="padding-bottom:20px;">
+                                <a href="buy.html" onclick="updateInfo()">
+                                    <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy </button>
+                                </a>
+
+                            </div>                                        
+                        </div>       
+                    </form>
             
                     <div class="col-xs-9">
                         
@@ -120,6 +122,8 @@
         <script>
             var image = document.getElementById('main-photo');
             image.src = sessionStorage.image;
+            var store_img = document.getElementById('photo-id');
+            store_img.value = sessionStorage.image;
             var price = document.getElementById('main-price');
             price.innerHTML = "$" + sessionStorage.price;
             function updateInfo() {
