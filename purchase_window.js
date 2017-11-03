@@ -3,9 +3,8 @@ function submitFunction() {
     if (confirm("Your purchased will not be complete until we recieve your payment.") == true) {
         txt = "You pressed OK!";
     } else {
-        txt = "You pressed Cancel!";
+        window.location = purchase_window.html
     }
-    document.getElementById("demo").innerHTML = txt;
 }
 
 
