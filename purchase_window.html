@@ -42,7 +42,7 @@
                             </div>
 
                             <div class="section1">                  
-                                <label for="basic-url">Email Addresses:</label>
+                                <label for="basic-url">Email Address:</label>
                                 <div class="input-group">
                                   <span class="input-group-addon2"></span>
                                   <input name="Email:" type="text" id="main-email" class="form-control" placeholder="Your Email" aria-describedby="basic-addon2">
@@ -125,6 +125,14 @@
                 sessionStorage.quantity = document.getElementById('main-quantity').value;
                 sessionStorage.address = document.getElementById('main-address').value;
                 sessionStorage.yourname = document.getElementById('main-name').value;
+            }
+            function submitFunction() {
+    
+                if (confirm("Your purchased will not be complete until we recieve your payment.") == true) {
+                    txt = "You pressed OK!";
+                } else {
+                    window.location = purchase_window.html
+                }
             }
 
         </script> 
