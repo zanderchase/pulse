@@ -23,7 +23,7 @@ div.section > div > input {margin:0;padding-left:5px;font-size:10px;padding-righ
     width: 300px;
 }
 .floatr{
-    position: relative;
+    position: absolute;
 
     right: 300px;
     font-weight: bolder;
